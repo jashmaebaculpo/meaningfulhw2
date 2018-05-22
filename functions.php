@@ -22,25 +22,51 @@
         switch($num)
         {
             case 0:
-                $style = "Rouge";
+                $style = "rouge";
                 break;
             case 1:
-                $style = "Warrior";
+                $style = "warrior";
                 break;
             case 2:
-                $style = "Cleric";
+                $style = "cleric";
                 break;
             case 3:
-                $style = "Wizard";
+                $style = "wizard";
                 break;
         }
         
-        echo "<div id = character> 
-                <p>Type: ", $got, "</p>",
-                "Style: " , $style, " </div> ";
+        $data = array();
         
+        for($i = 0; $i < 7; ++$i)
+        {
+            $chosenNum = rand(0, 20);
+            if($i == 0)
+            {
+                while($chosenNum < 8)
+                {
+                    $chosenNum = rand(8, 20);
+                }
+            }
+            if($i > 0)
+            {
+                while($chosenNum == $data[$i - 1])
+                {
+                    $chosenNum = rand(0, 20);
+                }
+            }
+            
+            array_push($data, $chosenNum);
+        }
         
-        
+        echo "<div id = 'bodyType'>  Type: ", $got, "</div>", 
+                "<div id = 'fightStyle'>Style: " , $style, "</div>";
+        echo "<div id = 'hp'><p>Health: ", $data[0],  "</p></div>";
+        echo "<div id = 'str'><p>Strength: ", $data[1], "</p></div>";
+        echo "<div id = 'dex'><p>Dexterity: ", $data[2], "</p></div>";
+        echo "<div id = 'con'><p>Constitution: ", $data[3], "</p></div>";
+        echo "<div id = 'int'><p>Intelligence: ", $data[4], "</p></div>";
+        echo "<div id = 'wis'><p>Wisdom: ", $data[5], "</p></div>";
+        echo "<div id = 'cha'><p>Charisma: ", $data[6], "</p></div>";
     }
 
 ?>

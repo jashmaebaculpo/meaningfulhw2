@@ -1,6 +1,6 @@
 body
 {
-    background-color: black;
+    background: linear-gradient(to bottom, black, white);
     color: white;
     text-align: center;
 }
@@ -18,9 +18,65 @@ h1
 }
 
 
-#character
+#bodyType
 {
    font-size: 250%; 
+   text-align: left;
+}
+
+#fightStyle
+{
+   font-size: 250%; 
+   text-align: left;
+}
+
+#hp
+{
+    font-size: 250%;
+    color: red;
+    text-align: right;
+}
+
+#str
+{
+    font-size: 250%;
+    color: blue;
+    text-align: right;
+}
+
+#dex
+{
+    font-size: 250%;
+    color: chocolate;
+    text-align: right;
+}
+
+#con
+{
+    font-size: 250%;
+    color: darkslateblue;
+    text-align: right;
+}
+
+#int
+{
+    font-size: 250%;
+    color: chartreuse;
+    text-align: right;
+}
+
+#wis
+{
+    font-size: 250%;
+    color: coral;
+    text-align: right;
+}
+
+#cha
+{
+    font-size: 250%;
+    color: deeppink;
+    text-align: right;
 }
 
 #main {
