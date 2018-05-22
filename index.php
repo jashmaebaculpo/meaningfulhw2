@@ -12,19 +12,19 @@
             @import url(css/styles.css);
         </style>
         <title>
-            Simple Card Reading
+            Character Maker
         </title>
     </head>
     
     <body>
         <h1>
-            <p>Hello.</p>
-            <p>Think of a question and then press the button to get a card reading.</p>
+
+            <p>Press the button to create your character. </p>
         </h1>
         
         <div id="main">
             <form>
-                <input type="submit" value="Spin!" />
+                <input type="submit" value="Choose!" />
             </form>
             
             <?php  play(); ?>
