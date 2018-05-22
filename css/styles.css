@@ -1,6 +1,6 @@
 body
 {
-    background: linear-gradient(to bottom, black, white);
+    background: black;
     color: white;
     text-align: center;
 }
@@ -43,7 +43,7 @@ h1
 {
     font-size: 150%; 
     text-align: left;
-    color: midnightblue;
+    color: mistyrose;
 }
 
 #hp
