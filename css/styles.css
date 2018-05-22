@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#main {
+    font-family: 'Baloo Bhaina', cursive;
+    background-image:url("../img/machine.png");
+    width:600px;
+    height:500px;
+    position:relative;
+    margin:0 auto;
+}
