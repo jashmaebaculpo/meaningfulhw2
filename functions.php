@@ -58,8 +58,70 @@
             array_push($data, $chosenNum);
         }
         
-        echo "<div id = 'bodyType'>  Type: ", $got, "</div>", 
-                "<div id = 'fightStyle'>Style: " , $style, "</div>";
+        //basis
+        echo "<div id = 'bodyType'>  Type: ", $got, "</div>"; 
+        echo "<div id = 'fightStyle'>Style: " , $style, "</div>";
+        
+        //story/background
+        $chooseStory = rand(0, 2);
+        if($chooseStory == 0)
+        {
+            echo "<div id = 'story'> Make a sad background story </div>";
+        }
+        
+        elseif($chooseStory == 1)
+        {
+            echo "<div id = 'story'> Make a neutral background story </div>";
+        }
+        
+        else
+        {
+            echo "<div id = 'story'> Make a happy background story </div>";
+        }
+    
+        $alignment = rand(1,9);
+        
+        switch($alignment)
+        {
+            case 9:
+                echo "<div id = ali> Your character is <strong> Chaotic Good </strong> </ali>";
+                break;
+                
+            case 8:
+                echo "<div id = ali> Your character is <strong> Chaotic Neutral </strong> </ali>";
+                break;
+            
+            case 7:
+                echo "<div id = ali> Your character is <strong> Chaotic Evil </strong> </ali>";
+                break;
+                
+            case 6:
+                echo "<div id = ali> Your character is <strong> Neutral Good </strong> </ali>";
+                break;
+                
+            case 5:
+                echo "<div id = ali> Your character is <strong> True Neutral </strong> </ali>";
+                break;
+                
+            case 4:
+                echo "<div id = ali> Your character is <strong> Neutral Evil </strong> </ali>";
+                break;
+                
+            case 3:
+                echo "<div id = ali> Your character is <strong> Lawful Good </strong> </ali>";
+                break;
+                
+            case 2:
+                echo "<div id = ali> Your character is <strong> Lawful Neutral </strong> </ali>";
+                break;
+                
+            case 1:
+                echo "<div id = ali> Your character is <strong> Lawful Evil </strong> </ali>";
+                break;
+                
+        }
+        
+        //stats
         echo "<div id = 'hp'><p>Health: ", $data[0],  "</p></div>";
         echo "<div id = 'str'><p>Strength: ", $data[1], "</p></div>";
         echo "<div id = 'dex'><p>Dexterity: ", $data[2], "</p></div>";

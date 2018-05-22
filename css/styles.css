@@ -7,7 +7,7 @@ body
 
 h1
 {
-    font-size: 500%;
+    font-size: 400%;
 }
 
 #type
@@ -20,61 +20,77 @@ h1
 
 #bodyType
 {
-   font-size: 250%; 
+   font-size: 150%; 
    text-align: left;
+   color: greenyellow;
 }
 
 #fightStyle
 {
-   font-size: 250%; 
+   font-size: 150%; 
    text-align: left;
+   color: yellow;
+}
+
+#story
+{
+    font-size: 150%; 
+    text-align: left;
+    color: orange;
+}
+
+#ali
+{
+    font-size: 150%; 
+    text-align: left;
+    color: midnightblue;
 }
 
 #hp
 {
-    font-size: 250%;
+    font-size: 150%;
     color: red;
     text-align: right;
 }
 
 #str
 {
-    font-size: 250%;
+    font-size: 150%;
     color: blue;
     text-align: right;
 }
 
 #dex
 {
-    font-size: 250%;
+    font-size: 150%;
     color: chocolate;
     text-align: right;
 }
 
 #con
 {
-    font-size: 250%;
+    font-size: 150%;
     color: darkslateblue;
     text-align: right;
 }
 
 #int
 {
-    font-size: 250%;
-    color: chartreuse;
+    font-size: 150%;
+    color: darkgreen;
     text-align: right;
 }
 
 #wis
 {
-    font-size: 250%;
+    font-size: 150%;
     color: coral;
     text-align: right;
 }
 
 #cha
 {
-    font-size: 250%;
+    font-size: 150%;
     color: deeppink;
     text-align: right;
 }
